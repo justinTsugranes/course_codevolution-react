@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 class EventBind extends Component {
+  // add a constructor using 'rconst' in snippets
   constructor(props) {
     super(props)
 
@@ -8,7 +9,8 @@ class EventBind extends Component {
       message: 'Hello',
     }
 
-    /* this.clickHandler = this.clickHandler.bind(this) */
+    // binding in the class constructor
+    // this.clickHandler = this.clickHandler.bind(this)
   }
 
   /* clickHandler() {
@@ -18,6 +20,7 @@ class EventBind extends Component {
     console.log(this)
   } */
 
+  // class property as arrow function
   clickHandler = () => {
     this.setState({
       message: 'Goodbye!',
@@ -28,8 +31,11 @@ class EventBind extends Component {
     return (
       <div>
         <div>{this.state.message}</div>
+        {/* First approach - binding in the render method*/}
         {/* <button onClick={this.clickHandler.bind(this)}>Click</button> */}
+        {/* Second approach - arrow function in render*/}
         {/* <button onClick={() => this.clickHandler()}>Click</button> */}
+        {/* Third / BETTER approach suggested by React documentation*/}
         <button onClick={this.clickHandler}>Click</button>
       </div>
     )
