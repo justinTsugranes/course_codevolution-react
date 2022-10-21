@@ -24,12 +24,12 @@ function App() {
       {/* <Welcome name='Diana' heroName='Wonder Woman' /> */}
       {/* <Hello /> */}
       {/* <Message /> */}
+      {/* <Counter /> */}
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
       {/* <EventBind /> */}
-      <ParentComponent />
-      {/* <UserGreeting /> */}
-      {/* <Counter /> */}
+      {/* <ParentComponent /> */}
+      <UserGreeting />
     </div>
   )
 }
