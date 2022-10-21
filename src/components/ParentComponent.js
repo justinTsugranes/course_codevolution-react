@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ChildComponent from './ChildComponent'
 
 class ParentComponent extends Component {
+  // constructor snippet: rconst
   constructor(props) {
     super(props)
 
@@ -9,9 +10,12 @@ class ParentComponent extends Component {
       parentName: 'Parent',
     }
 
+    // bind the method
     this.greetParent = this.greetParent.bind(this)
   }
 
+  // define the Method
+  // template literal syntax
   greetParent(childName) {
     alert(`Hello ${this.state.parentName} from ${childName}`)
   }
@@ -19,6 +23,7 @@ class ParentComponent extends Component {
   render() {
     return (
       <div>
+        {/* pass the method as a prop */}
         <ChildComponent greetHandler={this.greetParent} />
       </div>
     )

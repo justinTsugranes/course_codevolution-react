@@ -26,8 +26,8 @@ function App() {
       {/* <Message /> */}
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
-      <EventBind />
-      {/* <ParentComponent /> */}
+      {/* <EventBind /> */}
+      <ParentComponent />
       {/* <UserGreeting /> */}
       {/* <Counter /> */}
     </div>
