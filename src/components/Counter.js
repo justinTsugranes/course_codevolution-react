@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 
+// setState
+// Always make use of setState and never modify the state directly
+// If the code has to be executed after the state has been updated, place that code in the cal back function which is the second argument to the setState method.
+// When you have to update state based on the previous state value, pass a function as an argument instead of the regular object
+
 class Counter extends Component {
   constructor(props) {
     super(props)
@@ -10,18 +15,18 @@ class Counter extends Component {
   }
 
   increment() {
-    /* this.setState(
-      {
-        count: this.state.count + 1,
-      },
-      () => {
-        console.log('Callback value', this.state)
-      }
-    )
-    console.log(this.state.count)
-  } */
+    //   this.setState(
+    //     {
+    //       count: this.state.count + 1,
+    //     },
+    //     () => {
+    //       console.log('Callback value', this.state.count)
+    //     }
+    //   )
+    //   console.log(this.state.count)
+    // }
 
-    this.setState((prevState, props) => ({
+    this.setState((prevState) => ({
       count: prevState.count + 1,
     }))
     console.log(this.state.count)

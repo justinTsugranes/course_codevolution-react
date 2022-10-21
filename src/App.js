@@ -13,23 +13,23 @@ import Welcome from './components/Welcome'
 function App() {
   return (
     <div className='App'>
-      {/* <Counter />
-      <Greet name='Bruce' heroName='Batman'>
+      {/* <Greet name='Bruce' heroName='Batman'>
         <p>This is Children Props</p>
-      </Greet>
-      <Greet name='Clark' heroName='Superman' />
-      <button>Action</button>
-      <Greet name='Diana' heroName='Wonder Woman' />
-      <Welcome name='Bruce' heroName='Batman' />
-      <Welcome name='Clark' heroName='Superman' />
-      <Welcome name='Diana' heroName='Wonder Woman' />
-      <Hello />
-      <Message />
-      <FunctionClick />
-      <ClassClick />
-      <EventBind />
-      <ParentComponent /> */}
-      <UserGreeting />
+        </Greet>
+        <Greet name='Clark' heroName='Superman' />
+        <button>Action</button>
+        <Greet name='Diana' heroName='Wonder Woman' />
+        <Welcome name='Bruce' heroName='Batman' />
+        <Welcome name='Clark' heroName='Superman' />
+        <Welcome name='Diana' heroName='Wonder Woman' />
+        <Hello />
+        <Message />
+        <FunctionClick />
+        <ClassClick />
+        <EventBind />
+        <ParentComponent />
+      <UserGreeting /> */}
+      <Counter />
     </div>
   )
 }
